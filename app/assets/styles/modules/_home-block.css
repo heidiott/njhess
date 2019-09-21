@@ -1,0 +1,74 @@
+.home-block {
+    padding-top: 10%;
+    background-size: cover;
+    padding: 60px;
+    display: flex;
+    border: 1px solid $mainLtBrown;
+    margin: 20px 0;
+
+    &__inner {
+        padding: 40px;
+        background: rgba(255,255,255,0.6);
+        border: 1px solid $mainLtBrown;
+        position: relative;
+        width: 100%;
+        height: 50vh;
+    }
+
+    &__title {
+        margin-top: 0;
+    }
+
+    &__content {
+        line-height: 1.8rem;
+    }
+
+    &__video {
+        float: left;
+        padding: 10px 10px 20px 0;
+
+    }
+
+    &--consulting {
+        background-image: url("images/bgConsulting.png");
+    }
+
+    &--about {
+        background-image: url("images/bgAbout.png");
+    }
+
+    &--sticky {
+        background-image: url("images/bgSticky.png");
+    }
+
+    &--blog {
+        background-image: url("images/bgBlog.png");
+    }
+
+    &__rule {
+        clear: both;
+        width: 75px;
+        margin: 20px 0;
+        border-top: 1px solid $mainBrown;
+        border-bottom: 0;
+    }
+
+    & ul {
+        list-style: none;
+        padding: 0;
+      }
+
+    & li {
+        padding-left: 1.8rem;
+      }
+    
+    & li:before {
+        content: "\f14a"; /* FontAwesome Unicode */
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-left: -1.3em; /* same as padding-left set on li */
+        width: 1.3em; /* same as padding-left set on li */
+        color: $mainGreen;
+      }
+}
+
