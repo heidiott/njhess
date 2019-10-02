@@ -1,0 +1,41 @@
+.home-banner {
+    padding: 40px 0;
+    background-color: $mainGray;
+    margin-bottom: 20px;
+    
+    &__img {
+        border: 10px solid $mainBrown;
+    }
+
+    &__heading {
+        font-size: 3.3rem;
+        width: 75%;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__sub-heading {
+        color: $mainBrown;
+        font-style: italic;
+        font-size: 2rem;
+        margin:15px 0 10px 0;
+    }
+
+    &__rule {
+        clear: both;
+        width: 75px;
+        margin: 40px 0;
+        border-top: 1px solid $mainBrown;
+        border-bottom: 0;
+    }
+
+    &__social-icons {
+        margin-bottom: 20px;
+        color: $mainBrown;
+    }
+
+    &__icon {
+        font-size: 2.5rem;
+        margin: 10px 20px 0 0;
+    }
+}

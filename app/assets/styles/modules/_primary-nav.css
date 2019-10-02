@@ -1,0 +1,84 @@
+.primary-nav {
+    padding-top: 0px;
+    text-transform: uppercase;
+    color: $mainBrown;
+    font-size: 1.15rem;
+    
+    &--pull-right {
+      @mixin atMedium {
+        float: right;
+      }
+    }
+    
+    ul {
+      margin: 0;
+      padding: 0;
+      @mixin clearfix;
+    }
+  
+    li {
+      list-style: none;
+      display: inline-block;
+      
+      @mixin atMedium {
+        margin-right: 20px;
+        padding-right: 0;
+        float: left;
+        display: block;
+        position: relative;
+      }
+    }
+  
+    li:last-child {
+      padding-right: 0;
+
+    }
+  
+    a {
+      text-decoration: none;
+      display: block;
+      padding: 5px 8px;
+  
+      @mixin atMedium {
+        padding: 3px 8px;
+        margin: 0;
+      }
+    }
+
+    a:hover, &--active {
+        color: $mainDkBrown;
+        text-shadow: 1px 1px 2px $mainLtBrown;
+    }
+  }
+
+    #top-menu .current-menu-item a::before,
+    #top-menu .current_page_item a::before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 0;
+    }
+    #top-menu li a:before {
+        content: "";
+        position: absolute;
+        z-index: -2;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: $mainBrown; /*** COLOR OF THE LINE ***/
+        height: 1px; /*** THICKNESS OF THE LINE ***/
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    #top-menu li a:hover {
+        opacity: 1 !important;
+    }
+    #top-menu li a:hover:before {
+        right: 0;
+    }
+    

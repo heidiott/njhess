@@ -1,0 +1,16 @@
+.site-header {
+    padding: 20px 0;
+    width: 100%;
+    
+
+    &__logo {
+        max-width: 350px;
+    }
+
+    &__menu-content {
+        font-family: 'Cinzel', serif;
+        width: 100%;
+        height: 100%;
+    }
+}
+
