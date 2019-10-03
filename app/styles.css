@@ -513,14 +513,22 @@ a {
   text-align: center;
 }
 
+.small-print {
+  font-size: .8rem;
+
+}
+
+.small-print--italic {
+    font-style: italic;
+  }
+
 .btn {
-    background-color: white;
-    padding: 8px 20px;
-    border-radius: 20px;
+    background-color: #3d332e;
+    padding: 16px 30px;
     border: 1px solid #3d332e;
     font-size: .8em;
     text-transform: uppercase;
-    color: #3d332e;
+    color: white;
     display: inline-block;
 }
 
@@ -645,18 +653,18 @@ a {
         border: 10px solid #b29b95;
     }
 
-.home-banner__heading {
-        font-size: 3.3rem;
-        width: 75%;
-        margin: 0;
-        padding: 0;
-    }
-
 .home-banner__sub-heading {
         color: #b29b95;
         font-style: italic;
-        font-size: 2rem;
+        font-size: 1..5rem;
         margin:15px 0 10px 0;
+    }
+
+@media (min-width: 1024px) {
+
+.home-banner__sub-heading {
+            font-size: 2rem
+    }
     }
 
 .home-banner__rule {
@@ -687,7 +695,7 @@ a {
 }
 
 .home-block__inner {
-        padding: 40px;
+        padding: 2.5rem;
         background: rgba(255,255,255,0.6);
         border: 1px solid #f1f1f2;
         position: relative;
@@ -697,6 +705,7 @@ a {
 
 .home-block__title {
         margin-top: 0;
+        text-transform: uppercase;
     }
 
 .home-block__content {
@@ -723,14 +732,6 @@ a {
 
 .home-block--blog {
         background-image: url("images/bgBlog.png");
-    }
-
-.home-block__rule {
-        clear: both;
-        width: 75px;
-        margin: 20px 0;
-        border-top: 1px solid #b29b95;
-        border-bottom: 0;
     }
 
 .home-block ul {
@@ -768,3 +769,144 @@ a {
         display: flex;
         align-items: flex-end;
     }
+
+.page-section {
+  padding: 2.5rem;
+}
+
+@media (min-width: 576px) {
+
+.page-section {
+    padding: 4rem
+}
+    }
+
+.page-section--center {
+    text-align: center;
+  }
+
+.section-title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 3rem;
+
+  
+}
+
+@media (min-width: 576px) {
+
+.section-title {
+    font-size: 2.5rem
+
+  
+}
+    }
+
+@media (min-width: 768px) {
+
+.section-title {
+    font-size: 3rem
+
+  
+}
+    }
+
+.section-title__rule {
+    clear: both;
+    width: 75px;
+    margin: 20px 0;
+    border-top: 1px solid #b29b95;
+    border-bottom: 0;
+  }
+
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+
+input:focus:-moz-placeholder { color:transparent; }
+
+input:focus::-moz-placeholder { color:transparent; }
+
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+
+textarea:focus:-moz-placeholder { color:transparent; }
+
+textarea:focus::-moz-placeholder { color:transparent; }
+
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder { color: #999999;}
+
+input:-moz-placeholder { color: #999999;}
+
+input::-moz-placeholder { color: #999999;}
+
+input:-ms-input-placeholder { color: #999999;}
+
+textarea::-webkit-input-placeholder { color: #999999;}
+
+textarea:-moz-placeholder { color: #999999;}
+
+textarea::-moz-placeholder { color: #999999;}
+
+textarea:-ms-input-placeholder { color: #999999;}
+
+.form-wrapper {
+  width: 100%;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper__section {
+    padding: 20px 0 0 0;
+  }
+
+.form-wrapper__field-wrap {
+    position: relative;
+    background-color: #fff;
+    margin: 10px 5px;
+    display: inline-block;
+    float: left;
+  }
+
+.form-wrapper__field {
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-size: 15px;
+    color: #43383e;
+    line-height: 1.2;
+    padding: 0 5px;
+    height: 3rem;
+    padding: 0 20px 0 30px;
+  }
+
+.form-wrapper__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 62px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    font-size: 18px;
+    color: #999999;
+  }

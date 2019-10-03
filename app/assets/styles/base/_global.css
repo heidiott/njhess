@@ -40,3 +40,12 @@ a {
   width: 100%;
   text-align: center;
 }
+
+.small-print {
+  font-size: .8rem;
+  
+  &--italic {
+    font-style: italic;
+  }
+
+}

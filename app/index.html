@@ -48,22 +48,24 @@
         </div>
     </header>
 
-    <div class="home-banner">
-        <div class="wrapper">
-            <div class="row flex-center">
-                <div class="col col-sm-6 col-md-8">
-                    <img class="home-banner__img" src="images/header.png" alt="">
-                </div>
-                <div class="col col-sm-4 col-md-4">
-                    <h1 class="home-banner__heading">
-                        Pioneering Extraordinary Change
-                    </h1>
-                    <h2 class="home-banner__sub-heading">Through HR</h2>
-                    <hr class="home-banner__rule">
-                    <div class="home-banner__social-icons">
-                        <span class="home-banner__icon"><i class="fab fa-facebook-square"></i></span>
-                        <span class="home-banner__icon"><i class="fab fa-linkedin"></i></span>
-                        <span class="home-banner__icon"><i class="fab fa-twitter-square"></i></span>
+    <div id="home-banner" class="home-banner">
+        <div class="page-section">
+            <div class="wrapper">
+                <div class="row flex-center">
+                    <div class="col col-sm-7 col-md-6">
+                        <img class="home-banner__img" src="images/header.png" alt="">
+                    </div>
+                    <div class="col col-sm-5 col-md-6">
+                        <h1 class="section-title">
+                            Pioneering Extraordinary Change
+                        </h1>
+                        <h2 class="home-banner__sub-heading">Through HR</h2>
+                        <hr class="section-title__rule">
+                        <div class="home-banner__social-icons">
+                            <span class="home-banner__icon"><i class="fab fa-facebook-square"></i></span>
+                            <span class="home-banner__icon"><i class="fab fa-linkedin"></i></span>
+                            <span class="home-banner__icon"><i class="fab fa-twitter-square"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -76,8 +78,8 @@
                 <div class="col col-md-6">
                     <div class="home-block home-block--consulting">
                         <div class="home-block__inner">
-                            <h1 class="home-block__title">Consulting</h1>
-                            <hr class="home-block__rule">
+                            <h1 class="section-title">Consulting</h1>
+                            <hr class="section-title__rule">
                                 <ul class="home-block__content">
                                     <li>Organization Design and Development</li>
                                     <li>Human Resource Development</li>
@@ -93,8 +95,8 @@
                 <div class="col col-md-6">
                     <div class="home-block home-block--about">
                         <div class="home-block__inner">
-                            <h1 class="home-block__title">About</h1>
-                            <hr class="home-block__rule">
+                            <h1 class="section-title">About</h1>
+                            <hr class="section-title__rule">
                             <p class="home-block__content">My goal is to help organizations design and implement effective HR strategies that value engagement and whole system approaches.</p>
                             <div class="center">
                                 <a href="#" class="btn btn--centered">Read More</a>
@@ -108,8 +110,8 @@
                 <div class="col col-md-6">
                     <div class="home-block home-block--sticky">
                         <div class="home-block__inner">
-                            <h1 class="home-block__title">Sticky Situations</h1>
-                            <hr class="home-block__rule">
+                            <h1 class="section-title">Sticky Situations</h1>
+                            <hr class="section-title__rule">
                             <div class="home-block__video">
                                 <img src="images/video-thumb.png" alt="Video Thumb">
                             </div>
@@ -125,8 +127,8 @@
                 <div class="col col-md-6">
                     <div class="home-block home-block--blog">
                         <div class="home-block__inner">
-                            <h1 class="home-block__title">Recent Blog</h1>
-                            <hr class="home-block__rule">
+                            <h1 class="section-title">Recent Blog</h1>
+                            <hr class="section-title__rule">
                             <ul class="home-block__content">
                                 <li><a href="#">The Case for HR</a></li>
                                 <li><a href="#">Blog Post #2</a></li>
@@ -143,17 +145,35 @@
             
         </div>
     </div>
+    <div id="newsletter" class="newsletter">
+        <div class="page-section page-section--center">
+            <div class="wrapper">
+                <h1 class="section-title">Newsletter</h1>
+                <p>Our occasional newsletter is a guide to the best resources, articles, and information on how HR can be a positave change agent for your organization</p>
+                <div class="small-print small-print--italic">We will never share your email address and you can unsubscribe at anytime</div>
+                <div class="form-wrapper">
+                    <div class="form-wrapper__section">
+                        <form class="form-wrapper__form validate-form" action="#" method="post">
+                            <div class="form-wrapper__field-wrap validate-input  data-validate="Name is required">
+                                <input class="form-wrapper__field" type="text" id="name" name="name" placeholder="Name">
+                                <label class="form_label" for="name">
+                                    <span class="lnr lnr-user"></span>
+                                </label>
+                            </div>
+                            <div class="form-wrapper__field-wrap validate-input data-validate = "Valid email is required: ex@abc.xyz">
+                                <input class="form-wrapper__field" type="text" id="email" name="email" placeholder="E-mail">
+                                <label class="form_label" for="email">
+                                    <span class="lnr lnr-user"></span>
+                                </label>
+                            </div>
+                            <div class="form-wrapper__field-wrap">
+                                <button class="btn">Subscribe</button>
+                            </div>
 
-    <div class="newsletter">
-        <div class="wrapper">
-            <h1>Newsletter</h1>
-            <p>Our occasional newsletter is a guide to the best resources, articles, and information on how HR can be a positave change agent for your organization</p>
-            <div class="newletter--smPrint">We will never share your email address and you can unsubscribe at anytime</div>
-            <form action="#" method="post">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="E-mail">
-                <button class="btn">Subscribe</button>
-            </form>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -161,7 +181,8 @@
         <div class="site-footer">
             <div class="wrapper">
                 <div class="site-footer__copy">
-                    <h1 class="site-footer__heading">NJ Hess Associates</h1>
+                    <h1 class="section-title">NJ Hess Associates</h1>
+                    <hr class="section-title__rule">
                     <p>&copy; 2019 NJ Hess Associates. All rights reserved.</p>
                     <p>Designed by <a href="http://www.freshpage.com">Freshpage Media.</a></p>
                 </div>
@@ -200,6 +221,7 @@
         </div>
     </footer>
 
-
+    <script src="assets/scripts/form.js"></script>
+    
 </body>
 </html>

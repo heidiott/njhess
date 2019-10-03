@@ -7,7 +7,7 @@
     margin: 20px 0;
 
     &__inner {
-        padding: 40px;
+        padding: 2.5rem;
         background: rgba(255,255,255,0.6);
         border: 1px solid $mainLtBrown;
         position: relative;
@@ -17,6 +17,7 @@
 
     &__title {
         margin-top: 0;
+        text-transform: uppercase;
     }
 
     &__content {
@@ -45,13 +46,7 @@
         background-image: url("images/bgBlog.png");
     }
 
-    &__rule {
-        clear: both;
-        width: 75px;
-        margin: 20px 0;
-        border-top: 1px solid $mainBrown;
-        border-bottom: 0;
-    }
+
 
     & ul {
         list-style: none;
