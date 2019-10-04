@@ -1,4 +1,4 @@
-@import "normalize.css";
+@import "../../../node_modules/normalize.css/normalize.css";
 @import "base/_screen";
 @import "base/_variables";
 @import "base/_mixins";
@@ -12,4 +12,5 @@
 @import "modules/_wrapper";
 @import "modules/_page-section";
 @import "modules/_section-title";
-@import "modules/_form.css";
+@import "modules/_form";
+@import "modules/_footer";

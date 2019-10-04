@@ -1,14 +1,69 @@
 .section-title {
   margin: 0;
+  padding:0;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 1rem;
 
+  
   @mixin atSmall {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
 
   @mixin atMedium {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+
+
+  &--xlg {
+    font-size: 1rem;
+
+    @mixin atSmall {
+      font-size: 1.3rem;
+    }
+  
+    @mixin atMedium {
+      font-size: 2.5rem;
+    }
+  
+    @mixin atLarge {
+      font-size: 4rem;
+    }
+
+  }
+
+  &--md {
+    font-size: 1.5rem;
+
+    @mixin atSmall {
+      font-size: 2rem;
+    }
+  
+    @mixin atMedium {
+      font-size: 2.5rem;
+    }
+
+  }
+
+  &--sm {
+    font-size: .8rem;
+    margin-bottom: 15px;
+
+    @mixin atSmall {
+      font-size: 1.1rem;
+    }
+  
+    @mixin atMedium {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  &--brown{
+    color: $mainBrown;
+  }
+
+  &--italic {
+    font-style: italic;
   }
 
   &__rule {

@@ -1,0 +1,50 @@
+.footer {
+  background-color: $mainBrown;
+  color: #fff;
+  font-size: .9rem;
+  line-height: 1.5rem;
+
+  a {
+    color: $mainGray;
+  } 
+
+  a:hover {
+    color: $mainDkBrown;
+  }
+
+  &__contact {
+
+  }
+
+  &__copy {
+
+  }
+
+  &__menu {
+
+    &.col {
+      padding-right: 0;
+    }
+
+    &__col {
+      text-align: left;
+      float: left;
+      width: 33%;
+    }
+
+    i {
+      margin-right: 5px;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+    padding: 5px 20px 5px 0;
+    display: block;
+    position: relative;
+    }
+  }
+}

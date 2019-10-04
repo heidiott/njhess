@@ -492,10 +492,15 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Marcellus', serif;
+  margin: 0;
 }
 
 .flex {
-  display: flex;
+	display: flex;
+}
+
+.flex-height {
+  margin: 10px;
 }
 
 .flex-center {
@@ -511,6 +516,8 @@ a {
 .center {
   width: 100%;
   text-align: center;
+  padding: 20px;
+  clear: both;
 }
 
 .small-print {
@@ -529,7 +536,6 @@ a {
     font-size: .8em;
     text-transform: uppercase;
     color: white;
-    display: inline-block;
 }
 
 .site-header {
@@ -644,27 +650,20 @@ a {
     }
 
 .home-banner {
-    padding: 40px 0;
+    padding: 10px 0;
     background-color: #f1f1f2;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
+
+@media (min-width: 576px) {
+
+.home-banner {
+        padding: 20px 0
+}
+    }
 
 .home-banner__img {
         border: 10px solid #b29b95;
-    }
-
-.home-banner__sub-heading {
-        color: #b29b95;
-        font-style: italic;
-        font-size: 1..5rem;
-        margin:15px 0 10px 0;
-    }
-
-@media (min-width: 1024px) {
-
-.home-banner__sub-heading {
-            font-size: 2rem
-    }
     }
 
 .home-banner__rule {
@@ -681,8 +680,17 @@ a {
     }
 
 .home-banner__icon {
-        font-size: 2.5rem;
-        margin: 10px 20px 0 0;
+        font-size: 1.5rem;
+        margin: 5px 10px 0 0;
+    }
+
+@media (min-width: 768px) {
+
+.home-banner__icon {
+            font-size: 3rem;
+
+            margin: 10px 20px 0 0
+    }
     }
 
 .home-block {
@@ -700,7 +708,7 @@ a {
         border: 1px solid #f1f1f2;
         position: relative;
         width: 100%;
-        height: 50vh;
+        height: 60vh;
     }
 
 .home-block__title {
@@ -754,6 +762,7 @@ a {
 
 .newsletter {
     background-color: #f1f1f2;
+    margin-top: 40px;
 }
 
 .wrapper {
@@ -771,13 +780,13 @@ a {
     }
 
 .page-section {
-  padding: 2.5rem;
+  padding: 1rem;
 }
 
 @media (min-width: 576px) {
 
 .page-section {
-    padding: 4rem
+    padding: 2.5rem
 }
     }
 
@@ -787,8 +796,9 @@ a {
 
 .section-title {
   margin: 0;
+  padding:0;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 1rem;
 
   
 }
@@ -796,7 +806,7 @@ a {
 @media (min-width: 576px) {
 
 .section-title {
-    font-size: 2.5rem
+    font-size: 1rem
 
   
 }
@@ -805,11 +815,91 @@ a {
 @media (min-width: 768px) {
 
 .section-title {
-    font-size: 3rem
+    font-size: 2rem
 
   
 }
     }
+
+.section-title--xlg {
+    font-size: 1rem;
+
+  }
+
+@media (min-width: 576px) {
+
+.section-title--xlg {
+      font-size: 1.3rem
+
+  }
+    }
+
+@media (min-width: 768px) {
+
+.section-title--xlg {
+      font-size: 2.5rem
+
+  }
+    }
+
+@media (min-width: 1024px) {
+
+.section-title--xlg {
+      font-size: 4rem
+
+  }
+    }
+
+.section-title--md {
+    font-size: 1.5rem;
+
+  }
+
+@media (min-width: 576px) {
+
+.section-title--md {
+      font-size: 2rem
+
+  }
+    }
+
+@media (min-width: 768px) {
+
+.section-title--md {
+      font-size: 2.5rem
+
+  }
+    }
+
+.section-title--sm {
+    font-size: .8rem;
+    margin-bottom: 15px;
+
+  }
+
+@media (min-width: 576px) {
+
+.section-title--sm {
+      font-size: 1.1rem
+
+  }
+    }
+
+@media (min-width: 768px) {
+
+.section-title--sm {
+      font-size: 1.5rem
+
+  }
+    }
+
+.section-title--brown{
+    color: #b29b95;
+  }
+
+.section-title--italic {
+    font-style: italic;
+  }
 
 .section-title__rule {
     clear: both;
@@ -910,3 +1000,51 @@ textarea:-ms-input-placeholder { color: #999999;}
     font-size: 18px;
     color: #999999;
   }
+
+.footer {
+  background-color: #b29b95;
+  color: #fff;
+  font-size: .9rem;
+  line-height: 1.5rem;
+}
+
+.footer a {
+    color: #f1f1f2;
+  }
+
+.footer a:hover {
+    color: #3d332e;
+  }
+
+.footer__contact {
+
+  }
+
+.footer__copy {
+
+  }
+
+.footer__menu.col {
+      padding-right: 0;
+    }
+
+.footer__menu__col {
+      text-align: left;
+      float: left;
+      width: 33%;
+    }
+
+.footer__menu i {
+      margin-right: 5px;
+    }
+
+.footer__menu ul {
+      padding: 0;
+      margin: 0;
+    }
+
+.footer__menu li {
+    padding: 5px 20px 5px 0;
+    display: block;
+    position: relative;
+    }
