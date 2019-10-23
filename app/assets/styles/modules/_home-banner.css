@@ -2,6 +2,9 @@
     padding: 10px 0;
     background-color: $mainGray;
     margin-bottom: 40px;
+    background-image: url('/images/headerBg.png');
+    background-size: cover;
+    background-position: 0 0;
 
     @mixin atSmall {
         padding: 20px 0
@@ -21,7 +24,7 @@
 
     &__social-icons {
         margin-bottom: 20px;
-        color: $mainBrown;
+        color: white;
     }
 
     &__icon {
@@ -30,7 +33,6 @@
 
         @mixin atMedium {
             font-size: 3rem;
-
             margin: 10px 20px 0 0;
         }
     }

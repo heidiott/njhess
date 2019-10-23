@@ -1,68 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NJ Hess Associates</title>
-    <script src="./assets/scripts/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/43b6edacde.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel|Marcellus|Open+Sans&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="site-header">
-        <div class="wrapper wrapper--flex">
-            <div class="site-header__logo">
-                <a href="#"><img src="images/logo.png" alt="NJ Hess Associates"></a>
-            </div>
-            <div class="site-header__menu-icon">
-                <div class="site-header__menu-icon__middle"></div>
-            </div>
-            <div class="site-header__menu-content">
-                <nav class="primary-nav primary-nav--pull-right">
-                    <ul id="top-menu" class="primary-nav__list" >
-                        <li>
-                            <a href="#" class="primary-nav--active">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Consulting</a>
-                        </li>
-                        <li>
-                            <a href="#">Sticky Situations</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Resources</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+<?php get_header(); ?>
 
-    <div id="home-banner" class="home-banner">
+<div id="home-banner" class="home-banner">
         <div class="page-section">
             <div class="wrapper">
                 <div class="row flex-center">
-                   
                     <div class="col col-sm-7">
-                         <!-- 
-                        <img class="home-banner__img" src="images/header.png" alt="">
-                        -->
+                        <img class="home-banner__img" src="<?php echo get_template_directory_uri(); ?>/images/header.png" alt="">
                     </div>
-                     
                     <div class="col col-sm-5">
-                        <h1 class="section-title--xlg section-title--white">Pioneering Extraordinary Change</h1>
-                        <h2 class="section-title--md section-title--yellow section-title--italic">Through HR</h2>
+                        <h1 class="section-title--xlg">Pioneering Extraordinary Change</h1>
+                        <h2 class="section-title--md section-title--brown section-title--italic">Through HR</h2>
                         <hr class="section-title__rule">
                         <div class="home-banner__social-icons">
                             <span class="home-banner__icon"><i class="fab fa-facebook-square"></i></span>
@@ -180,52 +127,4 @@
         </div>
     </div>
 
-    <footer>
-        <div class="footer">
-            <div class="page-section">
-                <div class="wrapper">
-                    <div class="footer__copy col col-md-4">
-                        <h1 class="section-title section-title--sm">NJ Hess Associates</h1>
-                        <div>&copy; 2019 NJ Hess Associates. All rights reserved.</div>
-                        <div>Designed by <a href="http://www.freshpage.com">Freshpage Media.</a></div>
-                    </div>
-                    <div class="footer__contact col col-md-3">
-                        <div>
-                            <a href="mailto:njhess@njhessassociates.com">njhess@njhessassociates.com</a>    
-                        </div>
-                        <div>717-566-6115</div>
-                    </div>
-                    <div class="footer__menu col col-md-5">
-                        <div class="footer__menu__col">
-                            <ul>
-                                <li><i class="fas fa-angle-double-right"></i><a href="#">Home</a></li>
-                                <li><i class="fas fa-angle-double-right"></i><a href="#">About</a></li>
-                                <li><i class="fas fa-angle-double-right"></i><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__menu__col">
-                            <ul>
-                                <li><i class="fas fa-angle-double-right"></i><a href="#">Consulting</a></li>
-                                <li><i class="fas fa-angle-double-right"></i><a href="#">Sticky Situations</a></li>
-                                <li><i class="fas fa-angle-double-right"></i><a href="#">Blog</a></li>
-                                <li><i class="fas fa-angle-double-right"></i><a href="#">Resources</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__menu__col">
-                            <ul>
-                                <li><i class="fas fa-angle-double-right"></i><a href="#">Facebook</a></li>
-                                <li><i class="fas fa-angle-double-right"></i><a href="#">Twitter</a></li>
-                                <li><i class="fas fa-angle-double-right"></i><a href="#">Instagram</a></li>
-                                <li><i class="fas fa-angle-double-right"></i><a href="#">Linkedin</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="./assets/scripts/forms.js"></script>
-    
-</body>
-</html>
+<?php get_footer(); ?>

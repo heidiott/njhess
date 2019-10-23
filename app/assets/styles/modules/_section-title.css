@@ -33,6 +33,7 @@
 
   &--md {
     font-size: 1.5rem;
+    margin-top: 20px;
 
     @mixin atSmall {
       font-size: 2rem;
@@ -58,8 +59,16 @@
 
   }
 
-  &--brown{
+  &--white {
+    color: white;
+  }
+
+  &--brown {
     color: $mainBrown;
+  }
+
+  &--yellow {
+    color: $mainYellow;
   }
 
   &--italic {
