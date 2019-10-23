@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/todoapp/public_html/
+    - /bin/cp app/index.html $DEPLOYPATH
+    - /bin/cp app/styles.css $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
