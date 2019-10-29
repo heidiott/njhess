@@ -10,7 +10,12 @@
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="<?php bloginfo('description'); ?>">
+        <meta name="description" content="<?php bloginfo('description'); ?>">
+        
+        <script src="./assets/scripts/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/43b6edacde.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Marcellus|Open+Sans&display=swap" rel="stylesheet">
 
 		<?php wp_head(); ?>
 

@@ -2,7 +2,7 @@
     padding: 10px 0;
     background-color: $mainGray;
     margin-bottom: 40px;
-    background-image: url('/images/headerBg.png');
+    background-image: url('images/headerBg.png');
     background-size: cover;
     background-position: 0 0;
 

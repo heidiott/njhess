@@ -58,7 +58,7 @@
       }
     
     & li:before {
-        content: "\f14a"; /* FontAwesome Unicode */
+        content: "\f299"; /* FontAwesome Unicode */
         font-family: FontAwesome;
         display: inline-block;
         margin-left: -1.3em; /* same as padding-left set on li */

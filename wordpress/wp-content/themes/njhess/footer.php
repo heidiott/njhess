@@ -45,5 +45,6 @@
     </footer>
 
     <?php wp_footer(); ?>
+    <script src="./scripts/forms.js"></script>
   </body>
 </html>

@@ -516,7 +516,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
-  color: #8b9a89;
+  color: #b6c4b3;
 }
 
 .center {
@@ -659,6 +659,9 @@ a {
     padding: 10px 0;
     background-color: #f1f1f2;
     margin-bottom: 40px;
+    background-image: url('images/headerBg.png');
+    background-size: cover;
+    background-position: 0 0;
 }
 
 @media (min-width: 576px) {
@@ -682,7 +685,7 @@ a {
 
 .home-banner__social-icons {
         margin-bottom: 20px;
-        color: #b29b95;
+        color: white;
     }
 
 .home-banner__icon {
@@ -694,7 +697,6 @@ a {
 
 .home-banner__icon {
             font-size: 3rem;
-
             margin: 10px 20px 0 0
     }
     }
@@ -758,12 +760,12 @@ a {
       }
 
 .home-block li:before {
-        content: "\f14a"; /* FontAwesome Unicode */
+        content: "\f299"; /* FontAwesome Unicode */
         font-family: FontAwesome;
         display: inline-block;
         margin-left: -1.3em; /* same as padding-left set on li */
         width: 1.3em; /* same as padding-left set on li */
-        color: #8b9a89;
+        color: #b6c4b3;
       }
 
 .newsletter {
@@ -858,6 +860,7 @@ a {
 
 .section-title--md {
     font-size: 1.5rem;
+    margin-top: 20px;
 
   }
 
@@ -899,8 +902,16 @@ a {
   }
     }
 
-.section-title--brown{
+.section-title--white {
+    color: white;
+  }
+
+.section-title--brown {
     color: #b29b95;
+  }
+
+.section-title--yellow {
+    color: #ede7ca;
   }
 
 .section-title--italic {

@@ -653,7 +653,7 @@ a {
     padding: 10px 0;
     background-color: #f1f1f2;
     margin-bottom: 40px;
-    background-image: url('/images/headerBg.png');
+    background-image: url('images/headerBg.png');
     background-size: cover;
     background-position: 0 0;
 }
@@ -754,7 +754,7 @@ a {
       }
 
 .home-block li:before {
-        content: "\f14a"; /* FontAwesome Unicode */
+        content: "\f299"; /* FontAwesome Unicode */
         font-family: FontAwesome;
         display: inline-block;
         margin-left: -1.3em; /* same as padding-left set on li */

@@ -15,10 +15,15 @@ function njhess_script() {
   wp_enqueue_script('njhess_nav_scripts');
 }  
 
+function njhess_features() {
+  add_theme_support('title_tag');
+}
 
 add_action( 'init', 'register_my_menu' );
 add_action( 'wp_enqueue_scripts', 'njhess_script' );
 add_action('wp_enqueue_scripts', 'njhess_styles'); // Add Theme Stylesheet
+add_action('after_setup_theme', 'njhess_features');
+
 
 ?>
  

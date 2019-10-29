@@ -6,3 +6,4 @@ deployment:
     - /bin/cp app/styles.css $DEPLOYPATH
     - /bin/cp -R app/images $DEPLOYPATH
     - /bin/cp -R app/assets $DEPLOYPATH
+    - /bin/cp -R wordpress $DEPLOYPATH

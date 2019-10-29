@@ -4,12 +4,16 @@
         <div class="page-section">
             <div class="wrapper">
                 <div class="row flex-center">
+                   
                     <div class="col col-sm-7">
-                        <img class="home-banner__img" src="<?php echo get_template_directory_uri(); ?>/images/header.png" alt="">
+                         <!-- 
+                        <img class="home-banner__img" src="images/header.png" alt="">
+                        -->
                     </div>
+                     
                     <div class="col col-sm-5">
-                        <h1 class="section-title--xlg">Pioneering Extraordinary Change</h1>
-                        <h2 class="section-title--md section-title--brown section-title--italic">Through HR</h2>
+                        <h1 class="section-title--xlg section-title--white">Pioneering Extraordinary Change</h1>
+                        <h2 class="section-title--md section-title--yellow section-title--italic">Through HR</h2>
                         <hr class="section-title__rule">
                         <div class="home-banner__social-icons">
                             <span class="home-banner__icon"><i class="fab fa-facebook-square"></i></span>
@@ -21,6 +25,20 @@
             </div>
         </div>
     </div>
+
+    <?php
+        $homepageBlocks = new WP_Query(array(
+            'post_type' => 'home_blocks'
+        ));
+
+        while($homepageBlocks->have_posts()) {
+            $homepageBlocks->the_post();
+            ?>
+                <li><?php the_title(); ?></li>
+                <?php print get_the_content(); ?>
+            <?php
+        }
+    ?>
 
     <div class="home-blocks">
         <div class="wrapper">
