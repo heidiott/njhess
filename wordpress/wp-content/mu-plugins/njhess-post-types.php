@@ -14,6 +14,21 @@ function njhess_post_types() {
       'singular_name' => 'Home Block'
     )
   ));
+
+  register_post_type('sticky_situations', array(
+    'supports' => array('title', 'editor'),
+    'rewrite' => array('slug' => 'sticky-situations'),
+    'has_archive' => true,
+    'public' => true,
+    'menu_icon' => 'dashicons-video-alt',
+    'labels' => array(
+      'name' => 'Sticky Situations',
+      'add_new_item' => 'Add New Sticky Situation',
+      'edit_item' => 'Edit Sticky Situation',
+      'all_items' => 'All Sticky Situations',
+      'singular_name' => 'Sticky Situation'
+    )
+  ));
 }
 
 add_action( 'init', 'njhess_post_types');

@@ -17,6 +17,7 @@ function njhess_script() {
 
 function njhess_features() {
   add_theme_support('title_tag');
+  add_image_size('homeBlock', 570, 570, true );
 }
 
 add_action( 'init', 'register_my_menu' );

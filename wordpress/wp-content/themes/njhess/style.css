@@ -15,7 +15,7 @@
  */
 
  html {
-  line-height: 1.15; /* 1 */
+  line-height: 1.5; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -358,7 +358,7 @@ template {
 /* Grid */
 
 .row {
-	margin-right: -20px;
+  margin-right: -20px;
 }
 
 .col {
@@ -516,7 +516,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
-  color: #b6c4b3;
+  color: #788a4a;
 }
 
 .center {
@@ -537,11 +537,18 @@ a {
 
 .btn {
     background-color: #3d332e;
-    padding: 16px 30px;
     border: 1px solid #3d332e;
     font-size: .8em;
     text-transform: uppercase;
     color: white;
+}
+
+.btn--large {
+  padding: 16px 30px;
+}
+
+.btn--small {
+  padding: 12px 20px;
 }
 
 .site-header {
@@ -658,7 +665,6 @@ a {
 .home-banner {
     padding: 10px 0;
     background-color: #f1f1f2;
-    margin-bottom: 40px;
     background-image: url('images/headerBg.png');
     background-size: cover;
     background-position: 0 0;
@@ -701,22 +707,48 @@ a {
     }
     }
 
+.home-blocks {
+  margin: 20px;
+}
+
 .home-block {
     padding-top: 10%;
     background-size: cover;
+    background-position: center;
     padding: 60px;
-    display: flex;
     border: 1px solid #f1f1f2;
     margin: 20px 0;
+    height: 100%;
 }
 
+.home-block--row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.home-block--box {
+  flex:1;
+  flex-basis: 40%;
+  margin: 20px;
+}
+
+
+@media (max-width: 1200px) {
+  .home-block--box {
+    flex:1;
+    flex-basis: 100%;
+    margin: 20px;
+  }
+}
+
+
+
 .home-block__inner {
-        padding: 2.5rem;
+        padding: 2.5rem 2.5rem 0;
         background: rgba(255,255,255,0.6);
         border: 1px solid #f1f1f2;
-        position: relative;
-        width: 100%;
-        height: 360px;
+        height: 100%;
     }
 
 .home-block__title {
@@ -728,26 +760,14 @@ a {
         line-height: 1.8rem;
     }
 
+.home-block__button {
+  margin-top: 20px;
+}
+
 .home-block__video {
         float: left;
         padding: 10px 10px 20px 0;
 
-    }
-
-.home-block--consulting {
-        background-image: url("images/bgConsulting.png");
-    }
-
-.home-block--about {
-        background-image: url("images/bgAbout.png");
-    }
-
-.home-block--sticky {
-        background-image: url("images/bgSticky.png");
-    }
-
-.home-block--blog {
-        background-image: url("images/bgBlog.png");
     }
 
 .home-block ul {
@@ -757,6 +777,7 @@ a {
 
 .home-block li {
         padding-left: 1.8rem;
+        padding-bottom: 15px;
       }
 
 .home-block li:before {
@@ -765,8 +786,12 @@ a {
         display: inline-block;
         margin-left: -1.3em; /* same as padding-left set on li */
         width: 1.3em; /* same as padding-left set on li */
-        color: #b6c4b3;
+        color: #788a4a;
       }
+
+.home-block li em {
+  font-size: .8rem;
+}
 
 .newsletter {
     background-color: #f1f1f2;
@@ -807,8 +832,6 @@ a {
   padding:0;
   text-transform: uppercase;
   font-size: 1rem;
-
-  
 }
 
 @media (min-width: 576px) {
@@ -1065,3 +1088,46 @@ textarea:-ms-input-placeholder { color: #999999;}
     display: block;
     position: relative;
     }
+
+.page-banner {
+      padding: 10px 0 0;
+      background-color: #f1f1f2;
+      background-image: url('images/page-bg.jpg');
+      background-size: cover;
+      background-position: 0 0;
+}
+
+.blog-banner {
+  padding: 10px 0 0;
+  background-color: #f1f1f2;
+  background-image: url('images/blog-bg.jpg');
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.banner-breadcrumb {
+  background-color: rgba(178,155,149, 0.3);
+  color: #fff;
+}
+
+.banner-breadcrumb__btn {
+  display: inline;
+  padding: 5px 0;
+}
+
+.banner-breadcrumb__divider {
+  display: inline-block;
+}
+
+.banner-breadcrumb__link {
+  color: #fff;
+}
+
+.post-item {
+  padding: 20px 0;
+  border-bottom: 1px solid #f1f1f2;
+}
+
+.page-content {
+  padding: 20px 0;
+}

@@ -1,27 +1,33 @@
 <?php get_header(); ?>
-  <div id="home-banner" class="home-banner">
-    <div class="page-section">
-      <div class="wrapper">
-        <h1><?php the_title(); ?></h1>
+  <?php while(have_posts()) {
+    the_post(); ?>
+
+    <div id="page-banner" class="page-banner">
+      <div class="page-section">
+        <div class="wrapper">
+          <h1 class="section-title--md section-title--white"><?php the_title(); ?></h1>
+        </div>
+      </div>
+      <div class="banner-breadcrumb">
+        <div class="banner-breadcrumb__inner wrapper">
+          <div class="banner-breadcrumb__btn">
+            <a href="#" class="banner-breadcrumb__link"><i class="fas fa-home"></i></a>
+          </div>
+          <div class="banner-breadcrumb__divider"><img src="images/breadcrumb-seperator.png" alt=""></div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="home-blocks">
-    <div class="wrapper">
-      <div class="row">
-        <div class="col col-md-8">
-          <?php
-            while(have_posts()) {
-              the_post();
-              the_content();
-            }
-          ?>
-        </div>
-        <div class="col col-md-4">
+    <div class="page-section">
+      <div class="wrapper">
 
-        </div>
-      </div> 
+          <div class="page-content">
+            <?php the_content();  ?>
+          </div>
+          
+      </div>
     </div>
-  </div>
+    
+  <?php } ?>
+  
 <?php get_footer(); ?>

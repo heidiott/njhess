@@ -1,4 +1,5 @@
 node_modules
 docs
 !.gitignore
+wordpress/wp-config.php
 
